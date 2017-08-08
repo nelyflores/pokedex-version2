@@ -3,7 +3,7 @@ var cargarPagina = function () {
   $(document).on("click",".activator", mostrarDetalles);
 };
 var cargarPersonajes = function () {
-  var url = "http://pokeapi.co/api/v2/pokemon-species/";
+  var url = "https://pokeapi.co/api/v2/pokemon-species/";
   $.getJSON(url, function (response) {
     var personajes=response.results;
     mostrarPersonajes(personajes);
